@@ -1,0 +1,19 @@
+{
+    "name": "express-static-website",
+    "version": 2,
+    "public": true,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    
+    ],
+    "routes": [
+      {
+        "src": "/((?!.*\\.\\w+$).*)",
+        "dest": "/index.js"
+      }
+   
+    ]
+  }
